@@ -1,0 +1,5 @@
+homepage: "https://www.smarketyrs.com"
+documentation: "https://www.smarketyrs.com/blog.html"
+versions:
+  - sha: b43d921e62f693e907f487deb468354aa2e5a1f4
+    changeNotes: Initial release.
