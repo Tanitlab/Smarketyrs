@@ -14,7 +14,6 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Smarketyrs model",
-  "categories":["Marketing", "ADVERTISING", "CONVERSIONS"],
   "brand": {
     "id": "brand_dummy",
     "displayName": "",
@@ -33,7 +32,7 @@ ___TEMPLATE_PARAMETERS___
   {
     "type": "TEXT",
     "name": "namespace",
-    "displayName": "Enterprise Name",
+    "displayName": "",
     "simpleValueType": true
   }
 ]
@@ -44,14 +43,14 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 // Saisissez le code de votre modèle ici.
 const log = require('logToConsole');
 log('data =', data);
+const encodeUriComponent = require('encodeUriComponent');
     
 const account = data.namespace;
 const injectScript = require('injectScript');
-const url = 'https://storage.googleapis.com/smarketyrs_js/smarketyrsjs_'+account+'.min.js?ignoreCache=1';
+const url = 'https://storage.googleapis.com/smarketyrs_js/smarketyrsjs_'+encodeUriComponent(account)+'.min.js?ignoreCache=1';
 injectScript(url, data.gtmOnSuccess, data.gtmOnFailure, url);
 
 // Appelez data.gtmOnSuccess une fois la balise terminée.
-
 
 
 ___WEB_PERMISSIONS___
@@ -111,6 +110,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 17/02/2021, 11:25:29
+Created on 08/03/2021, 11:44:40
 
 
