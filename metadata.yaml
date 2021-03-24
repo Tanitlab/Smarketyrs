@@ -1,6 +1,9 @@
 homepage: "https://www.smarketyrs.com"
 documentation: "https://www.smarketyrs.com/blog.html"
 versions:
+#Updated version
+  - sha: 2fd982059b8f9ac6d7e6805b41cf11e37010cf0d
+    changeNotes: Added label.
 #latest version
   - sha: 3f4014b413cfd0f62ff0466cb3cd977c9804b13d
     changeNotes: Added encodeUriComponent.
