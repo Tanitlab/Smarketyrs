@@ -14,6 +14,7 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Smarketyrs model",
+  "categories": ["MARKETING", "ADVERTISING"],
   "brand": {
     "id": "brand_dummy",
     "displayName": "",
